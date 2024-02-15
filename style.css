@@ -1,51 +1,60 @@
 /*retirar bullets das listas*/
 
+.header {
+    background-color: black; /* Os códigos de cor hexadecimal devem ser antecedidos de um cardinal */
+    color: white;
+}
 
+.menu{
+    background-color: #FF6D03; /* Os códigos de cor hexadecimal devem ser antecedidos de um cardinal */
+}
 
-ul {
-    list-style: none;
+.logo {
+    margin-top: 10px; /* Aplica margem superior no logo para que se afaste dos limites superiores do cabeçalho */
 }
 
 
-/*colocar as listas em linha*/
-
-ul li {
-    display: inline;
+.pre-footer {
+    padding: 30px;
 }
 
-.fa-brands, .fa-solid {
-font-size: 30px;
-margin-top: 30px;
-margin-left: 5px;
-margin-right: 5px;
-
+.pre-footer a {
+    color: black;
+    margin: 10px;
 }
+
+.pre-footer a:hover {
+    color: #FF6D03;
+}
+
+.logo-footer, .footer { /* aplicar o mesmo conjunto de instruções CSS em duas classes HTML diferentes */
+    background-color: #FF6D03;
+    text-align: center;
+}
+.logo-footer img {
+    max-width: 100px; /* imposição de uma largura máxima para a imagem (apenas pode reduzir para além deste valor, nunca aumentar) */
+    margin: 20px;
+}
+.footer {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.footer a:hover {
+    color: #FFFFFF;
+}
+
 
 .cabecalho h1{
     text-align: center; /*alinhar o texto ao centro*/
     text-transform: uppercase; /*Transformar o texto em maiúsculas*/
 }
 
-.comentario{
-    margin-top: 20px;
-}
-
-
-.barra-topo{
-    background-color: #6d6155;
-}
-
-.icones li a {
-    color:white; /*cor do texto*/
-}
-
 
 .navbar .navbar-nav .nav-item .nav-link {
-color: white;
+color: black;
 text-transform: uppercase;
 margin-left: 10px;
 margin-right: 10px;
-font-weight: bold;
 font-size: 20px;
 }
 
@@ -55,14 +64,174 @@ a {
 }
 
 a:hover {
-    color: red; /*sempre que alguém passar com o cursor em cima do texto aparece esta cor*/
-}
-
-.associacao {
-    padding-bottom: 50px; /*Alarga a margem inferior onde está o conteúdo*/
-    margin-top: 40px; /*afasta-se do topo*/
+    color: #FF6D03; /*sempre que alguém passar com o cursor em cima do texto aparece esta cor*/
 }
 
 html {
     font-family: 'Roboto', sans-serif; /*coloca o texto de todo o site neste estilo de letra*/
 }
+
+
+.social ul {
+    list-style: none; /* retira os bullets das listas */
+    padding-left: 0px; /* retira o padding que existe por omissão das listas */
+}
+.social li {
+    display: inline; /* coloca as listas em linha */
+}
+.social i { /* Margens e ícones das redes sociais*/
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* a classe social engloba todo o bloco das redes */
+.social {
+    text-align: center; /* centra todo o conteúdo que está na class "social" */
+    margin-top: 40px; /* afasta-se do topo */
+}
+
+.titulo-logo {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold; /* texto a bold */
+    text-transform: uppercase; /* texto em maiúsculas */
+}
+
+.active {
+    font-weight: bold;
+}
+
+.linha {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.linha hr {
+    width: 300px;
+    margin: 0px auto; /* para centrar o HR: margem automática */
+    border-color: #FF6D03; /* aplicar cor na linha (HR) deve ser feito com "border" n*/
+    border-width: 2px; /* indicar a espessura do traço */
+}
+
+.receitas-peixe {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.receitas-peixe h1{
+    margin-bottom: 40px;
+}
+
+.receitas-peixe h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 6px;
+}
+
+.receitas-carne {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.receitas-carne h1{
+    margin-bottom: 40px;
+}
+
+.receitas-carne h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 6px;
+}
+
+.receitas-vegetarianas {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.receitas-vegetarianas h1{
+    margin-bottom: 40px;
+}
+
+.receitas-vegetarianas h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 6px;
+}
+
+.receitas-sobremesa {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.receitas-sobremesa h1{
+    margin-bottom: 40px;
+}
+
+.receitas-sobremesa h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 6px;
+}
+
+.votadas {
+    text-align: center;
+}
+
+.votadas h1{
+    margin-bottom: 40px;
+}
+
+.votadas h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 6px;
+}
+
+h3 {
+    font-size: 20px; /* dimensão do tipo de letra */
+    margin-top: 20px; /* margem ao topo */
+    margin-bottom: 20px; /* margem inferior*/
+    line-height: 140%; /* Entrelinha com valor 140% maior do que a dimensão do tipo de letra definido acima */
+}
+
+.crepes h2 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.doce{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.açorda{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tradicional h2{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.ideias h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.descobrir {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
